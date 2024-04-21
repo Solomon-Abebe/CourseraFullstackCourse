@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+/* this is mobile first approach. 
+the style first made is for all (no need mobile break point) */
+body {
+  margin: 40px;
+  border: 1px solid black;
+  position: relative;
+}
+.main-title {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+.container {
+  position: relative;
+}
+.chicken,
+.beef,
+.sushi {
+  width: 394px;
+  background-color: goldenrod;
+  border: 1px solid black;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 25px;
+}
+h2 {
+  width: 140px;
+  text-align: center;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  float: right;
+}
+#h1 {
+  background-color: brown;
+}
+#h2 {
+  background-color: rgb(183, 212, 19);
+}
+#h3 {
+  background-color: rgb(42, 165, 149);
+}
+p {
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: justify;
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  /* tablet break point */
+  .chicken {
+    width: 40%;
+    display: inline-block;
+  }
+  .beef {
+    margin-left: 20px;
+    width: 40%;
+    display: inline-block;
+  }
+  .sushi {
+    width: 90%;
+    margin: right 20px;
+    margin-left: 20px;
+  }
+  footer {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 992px) {
+  /* desktop break point */
+  .chicken {
+    width: 28%;
+    display: inline-block;
+  }
+  .beef {
+    margin-left: 20px;
+    width: 28%;
+    display: inline-block;
+  }
+  .sushi {
+    display: inline-block;
+    width: 28%;
+    margin: right 20px;
+    margin-left: 20px;
+  }
+  footer {
+    margin-top: 140px;
+  }
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 16px;
+  background-color: goldenrod;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid black;
+  font-weight: 500;
+}
